@@ -1,0 +1,19 @@
+name: Charter
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+    - dash==2.14.2
+    - dash-bootstrap-components==1.5.0
+    - plotly==5.17.0
+    - pandas==2.1.3
+    - numpy==1.24.3
+    - scikit-learn==1.3.2
+    - seaborn==0.13.0
+    - matplotlib==3.8.2
+    - folium==0.15.1
+    - dash-extensions==1.0.4
+    - gunicorn==21.2.0

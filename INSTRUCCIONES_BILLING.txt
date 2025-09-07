@@ -1,0 +1,25 @@
+INSTRUCCIONES PARA EJECUTAR EL DASHBOARD DE BILLING OPERATIONS
+===============================================================
+
+1. ACTIVAR EL AMBIENTE CONDA:
+   conda activate Charter
+
+2. EJECUTAR LA APLICACIÓN:
+   python billing_dashboard.py
+
+3. ABRIR EN EL NAVEGADOR:
+   http://127.0.0.1:8051
+   o
+   http://localhost:8051
+
+4. PESTAÑAS DISPONIBLES:
+   - Real-time Billing: Facturación en tiempo real
+   - VIP Customers: Análisis de clientes VIP
+   - Department Billing: Facturación por departamento
+   - Product Billing: Facturación por producto
+   - Complaints & Resolutions: Quejas y resoluciones
+   - Customer Analysis: Análisis de clientes
+   - Network Analysis: Análisis de red
+   - Operations Analysis: Análisis de operaciones
+
+¡LISTO! El dashboard se abrirá con la pantalla de carga y luego podrás navegar entre todas las pestañas de análisis de facturación.

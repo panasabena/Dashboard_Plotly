@@ -1,0 +1,15 @@
+INSTRUCCIONES PARA EJECUTAR EL DASHBOARD
+==========================================
+
+1. ACTIVAR EL AMBIENTE CONDA:
+   conda activate Charter
+
+2. EJECUTAR LA APLICACIÓN:
+   python app.py
+
+3. ABRIR EN EL NAVEGADOR:
+   http://127.0.0.1:8050
+   o
+   http://localhost:8050
+
+¡LISTO! El dashboard se abrirá con la pantalla de carga y luego podrás navegar entre las pestañas "Dashboard" y "Guide".

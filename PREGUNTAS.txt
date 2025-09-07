@@ -1,0 +1,93 @@
+PREGUNTAS PARA DESPLIEGUE CORPORATIVO
+=====================================
+
+INFORMACIÓN TÉCNICA:
+1. ¿Tienes Power BI en tu licencia corporativa de Office 365?
+2. ¿Tienes acceso a Azure en tu empresa?
+3. ¿Tienes acceso a servidores internos o infraestructura IT?
+4. ¿Qué tipo de licencias de Microsoft tienes disponibles?
+
+USUARIOS Y ACCESO:
+5. ¿Cuántos usuarios necesitarían acceso al dashboard?
+6. ¿Los usuarios están en Active Directory (AD)?
+7. ¿Necesitas diferentes niveles de acceso (admin, usuario, solo lectura)?
+8. ¿Los usuarios están en la misma oficina o distribuidos geográficamente?
+
+REQUISITOS TÉCNICOS:
+9. ¿Prefieres mantener el código Python original o migrar a Power BI?
+10. ¿Necesitas que los datos se actualicen en tiempo real?
+11. ¿Los datos provienen de SharePoint, bases de datos, o archivos Excel?
+12. ¿Necesitas que los usuarios puedan descargar o exportar datos?
+
+INTEGRACIÓN CON SHAREPOINT:
+13. ¿Quieres que el dashboard aparezca como una página en SharePoint?
+14. ¿O prefieres un enlace externo que se abra desde SharePoint?
+15. ¿Necesitas que los permisos se hereden automáticamente del sitio de SharePoint?
+
+MANTENIMIENTO:
+16. ¿Quién se encargará del mantenimiento técnico?
+17. ¿Con qué frecuencia necesitas actualizar el dashboard?
+18. ¿Tienes soporte IT interno o necesitas una solución autogestionada?
+
+PRESUPUESTO:
+19. ¿Hay presupuesto para servicios en la nube (Azure, Power BI Premium)?
+20. ¿O necesitas una solución completamente gratuita?
+
+RESPUESTAS:
+[Escribir las respuestas aquí]
+
+
+1. Identify your main stakeholders
+
+In Billing Operations, your "internal clients" might be:
+
+Finance / Revenue Assurance → They want to minimize revenue loss and billing errors.
+Customer Care / Call Center → They want fewer complaints due to invoice errors.
+Marketing & Retention → They are interested in understanding why customers cancel (churn) and if billing is a factor.
+IT / Process Owners → They look for efficiencies in billing and collection processes.
+
+2. Ask and observe
+
+What reports do they look at daily or weekly?
+What indicators do they check to measure if the billing run was successful?
+What are the most frequent billing errors?
+In which cases do they have to manually "investigate" customer accounts?
+
+3. Review the data you already have
+
+Even if you don't have queries yet, you can start thinking about use cases. Examples:
+% of invoices with adjustments or credits → shows previous billing errors.
+Average time between invoice issuance and payment → affects cash flow.
+Customers with recurring unpaid invoices → churn risk.
+Comparison between what should be billed vs. what was actually billed (revenue leakage).
+
+
+PREGUNTAS PARA SARAH
+=====================================
+
+4. Look for telecommunications benchmarks
+
+In U.S. telcos, some typical billing KPIs are:
+
+First Bill Accuracy (FBA): % of customers whose first bill is correct.
+
+Billing Error Rate: Number of complaints for billing errors out of the total number of invoices.
+
+Days Sales Outstanding (DSO): Average number of days to collect on an invoice.
+
+Disputes per 1,000 invoices: Billing disputes by volume.
+
+5. Suggest "quick to implement" ideas
+
+When you build your dashboard or proposals, think of quick wins that are tangible for your bosses, such as:
+A dashboard showing the invoices most likely to be disputed.
+
+A heatmap of "zones" or customer segments with the most billing issues.
+
+A comparison between what was billed and what was expected according to the contracted plan (potential revenue leaks).
+
+Delinquency trends across different services (telephony, internet, cable).
+
+
+
+
