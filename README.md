@@ -2,6 +2,17 @@
 
 Un dashboard interactivo y moderno para el análisis completo de operaciones de facturación y métricas de negocio en tiempo real.
 
+## 🌐 **ACCESO AL DASHBOARD**
+
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Active-brightgreen?style=for-the-badge)](https://dashboard-plotly.onrender.com)
+[![Deployment](https://img.shields.io/badge/Deployment-Render-blue?style=for-the-badge)](https://render.com)
+[![Python](https://img.shields.io/badge/Python-3.12-blue?style=for-the-badge)](https://python.org)
+[![Dash](https://img.shields.io/badge/Dash-2.18.2-purple?style=for-the-badge)](https://dash.plotly.com)
+
+### 🚀 **[VER DASHBOARD EN VIVO](https://dashboard-plotly.onrender.com)**
+
+**¡El dashboard está disponible online!** Haz clic en el enlace para acceder a la aplicación web completa con todas las funcionalidades.
+
 ## 🚀 Características
 
 ### 📈 Visualizaciones Interactivas
@@ -94,6 +105,14 @@ http://localhost:8051
 ```
 
 ## 🌐 Despliegue Web
+
+### ✅ **DEPLOYMENT EXITOSO**
+
+**El dashboard ya está deployado y funcionando:**
+- **URL**: [https://dashboard-plotly.onrender.com](https://dashboard-plotly.onrender.com)
+- **Plataforma**: Render
+- **Estado**: ✅ Activo y funcionando
+- **Última actualización**: Automática desde GitHub
 
 ### Opción 1: Render (Recomendado)
 
