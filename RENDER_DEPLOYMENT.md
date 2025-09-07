@@ -28,8 +28,13 @@
 - **Start Command**: `gunicorn billing_dashboard:server --bind 0.0.0.0:$PORT --workers 2 --timeout 120`
 
 **Advanced Settings:**
-- **Python Version**: `3.12.0` (specified in runtime.txt)
+- **Python Version**: `3.12.9` (specified in runtime.txt and pyproject.toml)
 - **Auto-Deploy**: `Yes` (recommended for automatic updates)
+
+**IMPORTANT**: If Render still uses Python 3.13, manually set the Python version in the Render dashboard:
+1. Go to your service → **Settings** → **Environment**
+2. Add environment variable: `PYTHON_VERSION` = `3.12.9`
+3. Or use the `render.yaml` file for automatic configuration
 
 ### 3. Environment Variables (Optional)
 
@@ -73,14 +78,19 @@ Your deployed dashboard includes:
 
 ### Common Issues:
 
-1. **Pandas Build Error**: If you see pandas compilation errors with Python 3.13:
-   - ✅ **SOLVED**: Updated to Python 3.12.0 and pandas 2.2.3
-   - The error was caused by pandas 2.1.3 incompatibility with Python 3.13
+1. **Python Version Issues**: If Render uses Python 3.13 instead of 3.12:
+   - ✅ **SOLVED**: Added multiple Python version specifications
+   - **Manual Fix**: Set `PYTHON_VERSION=3.12.9` in Render environment variables
+   - **Files Updated**: runtime.txt, pyproject.toml, render.yaml, .python-version
 
-2. **Build Fails**: Check that all dependencies are in `requirements.txt`
-3. **App Won't Start**: Verify the Procfile command is correct
-4. **Port Issues**: Render automatically sets the PORT environment variable
-5. **Memory Issues**: Free tier has memory limits; consider upgrading if needed
+2. **Numpy/Scikit-learn Build Errors**: If you see numpy compilation errors:
+   - ✅ **SOLVED**: Updated to numpy 2.0.2 and scikit-learn 1.5.0 (Python 3.13 compatible)
+   - The error was caused by version incompatibilities
+
+3. **Build Fails**: Check that all dependencies are in `requirements.txt`
+4. **App Won't Start**: Verify the Procfile command is correct
+5. **Port Issues**: Render automatically sets the PORT environment variable
+6. **Memory Issues**: Free tier has memory limits; consider upgrading if needed
 
 ### Logs:
 - Check the **Logs** tab in your Render service dashboard
