@@ -24,8 +24,8 @@
 - **Branch**: `main`
 
 **Build & Deploy:**
-- **Build Command**: `pip install -r requirements.txt`
-- **Start Command**: `gunicorn billing_dashboard:server --bind 0.0.0.0:$PORT`
+- **Build Command**: `pip install --upgrade pip && pip install -r requirements.txt`
+- **Start Command**: `gunicorn billing_dashboard:server --bind 0.0.0.0:$PORT --workers 2 --timeout 120`
 
 **Advanced Settings:**
 - **Python Version**: `3.12.0` (specified in runtime.txt)
@@ -73,14 +73,23 @@ Your deployed dashboard includes:
 
 ### Common Issues:
 
-1. **Build Fails**: Check that all dependencies are in `requirements.txt`
-2. **App Won't Start**: Verify the Procfile command is correct
-3. **Port Issues**: Render automatically sets the PORT environment variable
-4. **Memory Issues**: Free tier has memory limits; consider upgrading if needed
+1. **Pandas Build Error**: If you see pandas compilation errors with Python 3.13:
+   - ✅ **SOLVED**: Updated to Python 3.12.0 and pandas 2.2.3
+   - The error was caused by pandas 2.1.3 incompatibility with Python 3.13
+
+2. **Build Fails**: Check that all dependencies are in `requirements.txt`
+3. **App Won't Start**: Verify the Procfile command is correct
+4. **Port Issues**: Render automatically sets the PORT environment variable
+5. **Memory Issues**: Free tier has memory limits; consider upgrading if needed
 
 ### Logs:
 - Check the **Logs** tab in your Render service dashboard
 - Look for error messages during build or runtime
+
+### If You Still Get Pandas Errors:
+1. Make sure you're using Python 3.12.0 (specified in runtime.txt)
+2. Verify the build command includes: `pip install --upgrade pip`
+3. Check that pandas version is 2.2.3 or higher in requirements.txt
 
 ## 💰 Pricing
 
