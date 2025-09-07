@@ -28,7 +28,7 @@
 - **Start Command**: `gunicorn billing_dashboard:server --bind 0.0.0.0:$PORT`
 
 **Advanced Settings:**
-- **Python Version**: `3.11.0` (specified in runtime.txt)
+- **Python Version**: `3.12.0` (specified in runtime.txt)
 - **Auto-Deploy**: `Yes` (recommended for automatic updates)
 
 ### 3. Environment Variables (Optional)

@@ -61,7 +61,7 @@ Un dashboard interactivo y moderno para el análisis completo de operaciones de 
 ## 🛠️ Instalación
 
 ### Requisitos
-- Python 3.11+
+- Python 3.12+
 - pip
 
 ### Pasos de Instalación
